@@ -115,9 +115,9 @@ window.addEventListener("load", function sortPost() {
             fetch(url, options)
               .then((response) => response.json())
               .then((data) => {
-                window.location.assign(
-                  `./posts/index.html?pageNumber=${pageNumber}`
-                );
+
+                window.location.assign(`./index.html?pageNumber=${pageNumber}`);
+
               });
           });
         } else {
